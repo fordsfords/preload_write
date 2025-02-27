@@ -1,7 +1,8 @@
 #!/bin/sh
 # bld.sh
 
-for F in *.md; do :
+MD_FILES=`find . -name '*.md' -print`
+for F in $MD_FILES; do :
   if egrep "<!-- mdtoc-start -->" $F >/dev/null; then :
     # Update doc table of contents (see https://github.com/fordsfords/mdtoc).
     if which mdtoc.pl >/dev/null 2>&1; then LANG=C mdtoc.pl -b "" $F;

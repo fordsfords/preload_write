@@ -10,8 +10,9 @@ Example preloaded library to hook Linux's "write()".
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; [Introduction](#introduction)  
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; [Quick Start](#quick-start)  
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; [The Count Is Wrong](#the-count-is-wrong)  
+&nbsp;&nbsp;&nbsp;&nbsp;&bull; [Extended APIs](#extended-apis)  
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; [License](#license)  
-<!-- TOC created by '../mdtoc/mdtoc.pl README.md' (see https://github.com/fordsfords/mdtoc) -->
+<!-- TOC created by '../mdtoc/mdtoc.pl ./README.md' (see https://github.com/fordsfords/mdtoc) -->
 <!-- mdtoc-end -->
 
 
@@ -57,6 +58,10 @@ Why should glibc code call that same `write()` function when they can
 save an instruction or two by directly trapping to the kernel?
 
 This explanation makes sense, but I didn't feel like proving it.
+
+## Extended APIs
+
+See [[extended/README.md]].
 
 ## License
 
